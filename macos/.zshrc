@@ -70,10 +70,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git argocd helm kubectl )
+plugins=(git argocd helm kubectl kubectx)
 
 
 source $ZSH/oh-my-zsh.sh
+RPS1='$(kubectx_prompt_info)'
 
 # User configuration
 
@@ -101,8 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 eval $(thefuck --alias)
+
+HISTSIZE=50000
+SAVEHIST=50000
 
 source $ZSH/oh-my-zsh.sh
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
