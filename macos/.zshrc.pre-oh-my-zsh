@@ -1,0 +1,39 @@
+
+# autocomplete
+autoload -Uz compinit
+compinit
+autoload bashcompinit
+bashcompinit
+
+# kubernetes
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
+complete -o default -F __start_kubectl k
+
+# aliases
+
+alias ll="ls -lha"
+alias k="kubectl"
+
+# ks - Switch to any cluster context using grep
+# Copy cluster config files to $HOME/.kube/kubeconfigs with names like:
+# cluster-dn8-sp-kcapp001_BeonStable.config
+# cluster-dn8-sp-kcapp101_BeonTC.config etc.
+# After that these scripts will find them and set one match to the KUBECONFIG env variable
+# Usage: kn beonstable
+# Changing config to BeonStable_cluster-dn8-sp-kcapp001.config
+# KUBECONFIG set: /home/username/.kube/kubeconfigs/BeonStable_cluster-dn8-sp-kcapp001.config
+alias ks=ks; ks() {
+  grep_count=`ls $HOME/.kube/kubeconfigs | grep -i $1 | wc -l`
+  if [[ "$grep_count" -eq 1 ]]; then
+    
+    config_name=`ls $HOME/.kube/kubeconfigs | grep -i $1`
+    echo -e "${GREEN}Changing config to $config_name${NORMAL}"
+    export KUBECONFIG=$HOME/.kube/kubeconfigs/$config_name
+    echo "KUBECONFIG set: $KUBECONFIG"
+  elif [[ "$grep_count" -eq 0 ]]; then
+    echo -e "${RED}No matches found to: $1${NORMAL}"
+  else
+    echo -e "${RED}More then one matches found:${NORMAL}"
+    ls $HOME/.kube/kubeconfigs | grep -i $1
+  fi
+}
