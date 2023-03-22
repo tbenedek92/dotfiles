@@ -2,9 +2,10 @@
 This repo is a backup/source of truth for my own customized environment
 
 ## ToDO
-- [ ] iTerm
-- [ ] tmux
-- [x] rectangle
+- [x] iTerm2 config
+- [ ] tmux config
+- [ ] tmux plugins
 - [ ] hammerspoon
-- [ ] .zsh files
-- [ ] brew-file
+- [x] .zsh files
+- [x] Brewfile
+- [x] rectangle
