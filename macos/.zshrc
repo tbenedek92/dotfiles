@@ -74,6 +74,10 @@ plugins=(git argocd helm kubectl kubectx)
 
 
 source $ZSH/oh-my-zsh.sh
+# kubectx_mapping[context_name_from_kubeconfig]="$emoji[wolf_face]"
+kubectx_mapping[PRD-smartaitrader]="%{$fg[red]%}PRD-smartaitrader%{$reset_color%}"
+kubectx_mapping[DEV-smartaitrader]="%{$fg[green]%}DEV-smartaitrader%{$reset_color%}"
+
 RPS1='$(kubectx_prompt_info)'
 
 # User configuration
@@ -161,3 +165,4 @@ alias ks=ks; ks() {
     ls $HOME/.kube/kubeconfigs | grep -i $1
   fi
 }
+
