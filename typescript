@@ -1,0 +1,231 @@
+Script started on Thu Mar 23 11:40:01 2023
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32m:[39m[32m:[39m[90mq[39m[1m[31m:[1m[31mq[0m[39m[?1l>[?2004l
+k:q\zsh: command not found: :q
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;31m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32ml[39m[32ml[39m[90ml macos[39m[32ml[32ml[39m[39m [39m [39m [39m [39m [39m [?1l>[?2004l
+kll\total 48
+drwxr-xr-x   9 benedek  staff   288B Mar 23 11:40 [1m[36m.[39;49m[0m
+drwxr-xr-x   9 benedek  staff   288B Mar 22 09:48 [1m[36m..[39;49m[0m
+drwxr-xr-x  15 benedek  staff   480B Mar 23 11:40 [1m[36m.git[39;49m[0m
+-rw-r--r--   1 benedek  staff   170B Mar 22 23:19 .tmux.conf
+-rw-r--r--   1 benedek  staff   5.9K Mar 22 23:10 .zshrc
+-rw-r--r--@  1 benedek  staff   1.3K Mar 22 14:17 .zshrc.pre-oh-my-zsh
+-rw-r--r--   1 benedek  staff   215B Mar 22 23:20 README.md
+drwxr-xr-x   5 benedek  staff   160B Mar 22 23:19 [1m[36mmacos[39;49m[0m
+-rw-r--r--   1 benedek  staff    43B Mar 23 11:40 typescript
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[1m[31mb[0m[39m[1m[31mb[0m[39m[90mrew search zsh[39m[14D[1m[31mb[1m[31mr[0m[39m[1m[31mb[1m[31mr[1m[31me[0m[39m[0m[32mb[0m[32mr[0m[32me[32mw[39m[39m [33mu[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[90mpgrade [39m[33mu[33mp[39m[33mp[33mg[39m[33mg[33mr[39m[33mr[33ma[33md[33me[39m[39m [36m-n[39m[36m-[36mhelp[39m[39mm[39ma[39mc[39mc[39my[39m [36m-[36m-[36mh[36me[36ml[36mp[39m[?1l>[?2004l
+kbrew\[1mUsage: brew[0m [1mupgrade[0m [[4moptions[0m] [[4moutdated_formula[0m|[4moutdated_cask[0m ...]
+
+Upgrade outdated casks and outdated, unpinned formulae using the same options
+they were originally installed with, plus any appended brew formula options. If
+[4mcask[0m or [4mformula[0m are specified, upgrade only the given [4mcask[0m or [4mformula[0m
+kegs (unless they are pinned; see [1mpin[0m, [1munpin[0m).
+
+Unless [1mHOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK[0m is set, [1mbrew upgrade[0m or [1mbrew
+reinstall[0m will be run for outdated dependents and dependents with broken
+linkage, respectively.
+
+Unless [1mHOMEBREW_NO_INSTALL_CLEANUP[0m is set, [1mbrew cleanup[0m will then be run for
+the upgraded formulae or, every 30 days, for all formulae.
+
+  -d, --debug                      If brewing fails, open an interactive
+                                   debugging session with access to IRB or a
+                                   shell inside the temporary build directory.
+  -f, --force                      Install formulae without checking for
+                                   previously installed keg-only or non-migrated
+                                   versions. When installing casks, overwrite
+                                   existing files (binaries and symlinks are
+                                   excluded, unless originally from the same
+                                   cask).
+  -v, --verbose                    Print the verification and postinstall steps.
+  -n, --dry-run                    Show what would be upgraded, but do not
+                                   actually upgrade anything.
+      --formula, --formulae        Treat all named arguments as formulae. If no
+                                   named arguments are specified, upgrade only
+                                   outdated formulae.
+  -s, --build-from-source          Compile [4mformula[0m from source even if a
+                                   bottle is available.
+  -i, --interactive                Download and patch [4mformula[0m, then open a
+                                   shell. This allows the user to run
+                                   [1m./configure --help[0m and otherwise determine
+                                   how to turn the software package into a
+                                   Homebrew package.
+      --force-bottle               Install from a bottle if it exists for the
+                                   current or newest version of macOS, even if
+                                   it would not normally be used for
+                                   installation.
+      --fetch-HEAD                 Fetch the upstream repository to detect if
+                                   the HEAD installation of the formula is
+                                   outdated. Otherwise, the repository's HEAD
+                                   will only be checked for updates when a new
+                                   stable or development version has been
+                                   released.
+      --ignore-pinned              Set a successful exit status even if pinned
+                                   formulae are not upgraded.
+      --keep-tmp                   Retain the temporary files created during
+                                   installation.
+      --debug-symbols              Generate debug symbols on build. Source will
+                                   be retained in a cache directory.
+      --display-times              Print install times for each package at the
+                                   end of the run.
+      --cask, --casks              Treat all named arguments as casks. If no
+                                   named arguments are specified, upgrade only
+                                   outdated casks.
+      --skip-cask-deps             Skip installing cask dependencies.
+  -g, --greedy                     Also include casks with [1mauto_updates true[0m
+                                   or [1mversion :latest[0m.
+      --greedy-latest              Also include casks with [1mversion :latest[0m.
+      --greedy-auto-updates        Also include casks with [1mauto_updates true[0m.
+      --[no-]binaries              Disable/enable linking of helper executables
+                                   (default: enabled).
+      --require-sha                Require all casks to have a checksum.
+      --[no-]quarantine            Disable/enable quarantining of downloads
+                                   (default: enabled).
+      --appdir                     Target location for Applications (default:
+                                   [1m/Applications[0m).
+      --colorpickerdir             Target location for Color Pickers (default:
+                                   [1m~/Library/ColorPickers[0m).
+      --prefpanedir                Target location for Preference Panes
+                                   (default: [1m~/Library/PreferencePanes[0m).
+      --qlplugindir                Target location for QuickLook Plugins
+                                   (default: [1m~/Library/QuickLook[0m).
+      --mdimporterdir              Target location for Spotlight Plugins
+                                   (default: [1m~/Library/Spotlight[0m).
+      --dictionarydir              Target location for Dictionaries (default:
+                                   [1m~/Library/Dictionaries[0m).
+      --fontdir                    Target location for Fonts (default:
+                                   [1m~/Library/Fonts[0m).
+      --servicedir                 Target location for Services (default:
+                                   [1m~/Library/Services[0m).
+      --input-methoddir            Target location for Input Methods (default:
+                                   [1m~/Library/Input Methods[0m).
+      --internet-plugindir         Target location for Internet Plugins
+                                   (default: [1m~/Library/Internet Plug-Ins[0m).
+      --audio-unit-plugindir       Target location for Audio Unit Plugins
+                                   (default:
+                                   [1m~/Library/Audio/Plug-Ins/Components[0m).
+      --vst-plugindir              Target location for VST Plugins (default:
+                                   [1m~/Library/Audio/Plug-Ins/VST[0m).
+      --vst3-plugindir             Target location for VST3 Plugins (default:
+                                   [1m~/Library/Audio/Plug-Ins/VST3[0m).
+      --screen-saverdir            Target location for Screen Savers (default:
+                                   [1m~/Library/Screen Savers[0m).
+      --language                   Comma-separated list of language codes to
+                                   prefer for cask installation. The first
+                                   matching language is used, otherwise it
+                                   reverts to the cask's default language. The
+                                   default value is the language of your system.
+  -q, --quiet                      Make some output more quiet.
+  -h, --help                       Show this message.
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32mbrew[39m [33mupgrade[39m [36m--help[39m[19D[32ml[32ml[39m[39m [39m  [39m [39m [39m [39m [39m [39m [39m  [39m [39m [39m [39m [39m [39m [17D[32mb[32mr[32mew[39m [33mupgrade[39m [36m--help[39m[19D[39m [39m [39m [39m  [39m [39m [39m [39m [39m [39m [39m  [39m [39m [39m [39m [39m [39m [19D[32mbrew[39m [33mupgrade[39m [36m--help[39m[19D[32ml[32ml[39m[39m [39m  [39m [39m [39m [39m [39m [39m [39m  [39m [39m [39m [39m [39m [39m [17D[1m[31m:[1m[31mq[0m[39m[0m[32ms[0m[32mc[32mript[39m[32mc[32ma[32mt[39m[39m [35m.[35mt[35mmux.conf[39m[14D[32ms[32mc[32mr[32mi[32mp[32mt[39m[39m [39m [39m [39m [39m [39m [39m [39m [8D[1m[31m:[1m[31mq[0m[39m[39m [39m [39m [39m [0m[32ml[0m[32ml[39m[32mb[32mr[32mew[39m [33mupgrade[39m [36m--help[39m[19D[39m [39m [39m [39m  [39m [39m [39m [39m [39m [39m [39m  [39m [39m [39m [39m [39m [39m [19D[32mbrew[39m [33mupgrade[39m [36m--help[39m[36ml[39m[39m [90mp[39m[36me[39m[39m [39m [90mlp[39m[36mh[39m[39m [39m [39m [90melp[39m[36m-[39m[39m [39m [39m [39m [90mhelp[39m[36m-[39m[39m [39m [39m [39m [39m [90m-help[39m[36m-[36mn[39m[39m [39m [39m [39m [?1l>[?2004l
+kbrew\Running `brew update --auto-update`...
+[34m==>[0m [1mAuto-updated Homebrew![0m
+Updated 2 taps (homebrew/core and homebrew/cask).
+[34m==>[0m [1mNew Casks[0m
+starleaf
+
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32mbrew[39m [33mupgrade[39m [36m-n[39m[36m-[39m[39m [90mn[39m[39m [39m [90m-n[39m[39m [39m [?1l>[?2004l
+kbrew\[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[1m[31mb[0m[39m[1m[31mb[0m[39m[90mrew upgrade [39m[12D[1m[31mb[1m[31mr[0m[39m[1m[31mb[1m[31mr[1m[31me[0m[39m[0m[32mb[0m[32mr[0m[32me[32mw[39m[1m[31mb[1m[31mr[1m[31me[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90mw upgrade [39m[10D[1m[31mb[1m[31mr[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mew upgrade [39m[11D[1m[31mb[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[1m[31mb[0m[39m[90mrew upgrade [39m[12D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[32ml[39m[32ml[39m[90ml[39m[32ml[32ml[39m[32ml[39m[39m [32ml[39m[90ml[39m[39m [39m [1m[31mc[0m[39m[1m[31mc[0m[39m[90mat .tmux.conf[39m[13D[0m[32mc[32md[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90m Projects/forex/forex_infra/[39m[28D[1m[31mc[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[1m[31mc[0m[39m[90mat .tmux.conf[39m[13D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[1m[31mb[0m[39m[1m[31mb[0m[39m[90mrew upgrade [39m[12D[1m[31mb[1m[31mr[0m[39m[1m[31mb[1m[31mr[1m[31me[0m[39m[0m[32mb[0m[32mr[0m[32me[32mw[39m[39m [33ms[39m[39m [39m [39m [39m [39m [39m [39m [90mearch zsh[39m[9D[33ms[33me[39m[33me[33ma[39m[33ma[33mr[39m[33mr[33mc[39m[33mc[33mh[39m[39m [39mg[39m [39m pt[?1l>[?2004l
+kbrew\[34m==>[0m [1mFormulae[0m
+gptfdisk             gpp                  gpm                  gwt                  apt
+gptsync              gpx                  gmt                  [1mgit [32m✔[0m[0m
+hopenpgp-tools       gpa                  grt                  got
+
+[34m==>[0m [1mCasks[0m
+vincelwt-chatgpt
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[1m[31mp[0m[39m[1m[31mp[1m[31mi[0m[39m[0m[32mp[0m[32mi[32mp[39m [33mi[39m[33mi[33mn[39m[33mn[33ms[39m[33ms[33mt[39m[33mt[33ma[39m[33ma[33ml[39m[33ml[33ml[39m git-lazy-commit[27D[39m[3mp[39m[3mi[39m[3mp[3m [39m[3mi[39m[3mn[39m[3ms[39m[3mt[39m[3ma[39m[3ml[39m[3ml[3m [3mg[3mi[3mt[3m-[3ml[3ma[3mz[3my[3m-[3mc[3mo[3mm[3mm[3mi[3mt[23m
+[K
+[KMM[25C[23m[32mp[23m[32mi[23m[32mp[39m[23m [23m[33mi[23m[33mn[23m[33ms[23m[33mt[23m[33ma[23m[33ml[23m[33ml[39m[23m [23mg[23mi[23mt[23m-[23ml[23ma[23mz[23my[23m-[23mc[23mo[23mm[23mm[23mi[23mt[2B[K[KM[KM[52C[?1l>[?2004l[1Bkpip\Defaulting to user installation because normal site-packages is not writeable
+Collecting git-lazy-commit
+  Downloading git_lazy_commit-0.12-py3-none-any.whl (8.8 kB)
+Collecting openai
+  Downloading openai-0.27.2-py3-none-any.whl (70 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/70.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━[0m [32m61.4/70.1 kB[0m [31m1.7 MB/s[0m eta [36m0:00:01[0m[2K     [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m70.1/70.1 kB[0m [31m1.4 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting GitPython
+  Downloading GitPython-3.1.31-py3-none-any.whl (184 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/184.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━[0m [32m163.8/184.3 kB[0m [31m4.5 MB/s[0m eta [36m0:00:01[0m[2K     [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m184.3/184.3 kB[0m [31m3.5 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting gitdb<5,>=4.0.1
+  Downloading gitdb-4.0.10-py3-none-any.whl (62 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/62.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m62.7/62.7 kB[0m [31m3.8 MB/s[0m eta [36m0:00:00[0m
+[?25hRequirement already satisfied: requests>=2.20 in /Users/benedek/Library/Python/3.9/lib/python/site-packages (from openai->git-lazy-commit) (2.28.2)
+Collecting aiohttp
+  Downloading aiohttp-3.8.4-cp39-cp39-macosx_11_0_arm64.whl (338 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/338.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m [32m337.9/338.3 kB[0m [31m11.2 MB/s[0m eta [36m0:00:01[0m[2K     [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m338.3/338.3 kB[0m [31m4.0 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting tqdm
+  Downloading tqdm-4.65.0-py3-none-any.whl (77 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/77.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━[0m [32m71.7/77.1 kB[0m [31m8.6 MB/s[0m eta [36m0:00:01[0m[2K     [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m77.1/77.1 kB[0m [31m740.8 kB/s[0m eta [36m0:00:00[0m
+[?25hCollecting smmap<6,>=3.0.1
+  Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+Requirement already satisfied: idna<4,>=2.5 in /Users/benedek/Library/Python/3.9/lib/python/site-packages (from requests>=2.20->openai->git-lazy-commit) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/benedek/Library/Python/3.9/lib/python/site-packages (from requests>=2.20->openai->git-lazy-commit) (2022.12.7)
+Requirement already satisfied: charset-normalizer<4,>=2 in /Users/benedek/Library/Python/3.9/lib/python/site-packages (from requests>=2.20->openai->git-lazy-commit) (3.0.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/benedek/Library/Python/3.9/lib/python/site-packages (from requests>=2.20->openai->git-lazy-commit) (1.26.14)
+Collecting aiosignal>=1.1.2
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting frozenlist>=1.1.1
+  Downloading frozenlist-1.3.3-cp39-cp39-macosx_11_0_arm64.whl (35 kB)
+Collecting yarl<2.0,>=1.0
+  Downloading yarl-1.8.2-cp39-cp39-macosx_11_0_arm64.whl (57 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/57.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m57.8/57.8 kB[0m [31m4.7 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting async-timeout<5.0,>=4.0.0a3
+  Using cached async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting multidict<7.0,>=4.5
+  Downloading multidict-6.0.4-cp39-cp39-macosx_11_0_arm64.whl (29 kB)
+Collecting attrs>=17.3.0
+  Downloading attrs-22.2.0-py3-none-any.whl (60 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/60.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m60.0/60.0 kB[0m [31m6.6 MB/s[0m eta [36m0:00:00[0m
+[?25hInstalling collected packages: tqdm, smmap, multidict, frozenlist, attrs, async-timeout, yarl, gitdb, aiosignal, GitPython, aiohttp, openai, git-lazy-commit
+Successfully installed GitPython-3.1.31 aiohttp-3.8.4 aiosignal-1.3.1 async-timeout-4.0.2 attrs-22.2.0 frozenlist-1.3.3 git-lazy-commit-0.12 gitdb-4.0.10 multidict-6.0.4 openai-0.27.2 smmap-5.0.0 tqdm-4.65.0 yarl-1.8.2
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[1m[31mv[0m[39m[1m[31mv[0m[39m[90mi ~/.zshrc[39m[10D[0m[32mv[32mi[39m[39m [4m[35m~[24m[39m[4m[35m~[4m[35m/[24m[39m[4m[35m/[4m[35m.[24m[39m[24m[39m~[24m[39m/[24m[39m.[39ma[39m [39m [39m [39m pi  [4m[35m~[4m[35m/[4m[35m.[24m[39m [90mzshrc[39m[24m[39m~[24m[39m/[24m[39m.[39mo[39m [39m [39m [39m penai-apikey[?1l>[?2004l
+kvi\[?1049h[?1h=[1;53r[23m[24m[0m[H[J[?25l[53;1H"~/.openai-apikey" [New][2;1H[94m~                                                                                                         [3;1H~                                                                                                         [4;1H~                                                                                                         [5;1H~                                                                                                         [6;1H~                                                                                                         [7;1H~                                                                                                         [8;1H~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [28;1H~                                                                                                         [29;1H~                                                                                                         [30;1H~                                                                                                         [31;1H~                                                                                                         [32;1H~                                                                                                         [33;1H~                                                                                                         [34;1H~                                                                                                         [35;1H~                                                                                                         [36;1H~                                                                                                         [37;1H~                                                                                                         [38;1H~                                                                                                         [39;1H~                                                                                                         [40;1H~                                                                                                         [41;1H~                                                                                                         [42;1H~                                                                                                         [43;1H~                                                                                                         [44;1H~                                                                                                         [45;1H~                                                                                                         [46;1H~                                                                                                         [47;1H~                                                                                                         [48;1H~                                                                                                         [49;1H~                                                                                                         [50;1H~                                                                                                         [51;1H~                                                                                                         [52;1H~                                                                                                         [1;1H[34h[?25h[?25l[0m[53;1H[1m-- INSERT --[0m[53;13H[K[1;1H[34h[?25h[?25lsk-D1gvjseyscKarYPlHO1bT3BlbkFJQlauZhU3FrOj2QHpOG8f[34h[?25h[53;1H[K[1;51H[?25l[34h[?25h[?25l[53;1H:[34h[?25hwq[?25l"~/.openai-apikey" [New] 1L, 52B written
+[?1l>[34h[?25h[?1049l[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004hgg[90mp[39m[1m[31mg[1m[31mi[0m[39m[90mt push[39m[0m[32mg[0m[32mi[32mt[39m[39m [39ms[39m [39m [39m [90mtatus[39m[39mt[39ma [39m [39m [39m [90matus[39m [39m [39m [39m [39m [90mtatus[39m [39m [39m [39m [39m [39m [90mpush[39m[39m [39m [39m [39m [90m push[39m[1m[31mg[1m[31mi[0m[39m[39m [39m [39m [39m [39m [39m [90mt push[39m[0m[32mg[39m[0m[39m [39m [39m [39m [39m [39m [39m [32mg[39m[90mp[39m[1m[31mg[1m[31ms[0m[39m[90mt[39m[0m[32mg[39m[0m[39m [39m [32mg[39m[90mp[39m[1m[31mg[1m[31ms[0m[39m[90mt[39m[0m[32mg[0m[32ms[32mt[39m[?1l>[?2004l
+kgst\On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtypescript[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32mg[39m[32mg[39m[90mst[39m[1m[31mg[1m[31mi[0m[39m[39m [90mt push[39m[0m[32mg[0m[32mi[32mt[39m[39m [39md[39m [39m [39m [90miff ../kube-prometheus-stack/notes.md[39m[37D[39mi[39mf[33md[33mi[33mf[33mf[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [34D[?1l>[?2004l
+kgit\[?1049h[?1h=[K[3m(END)[23m[K[K[?1l>[?1049l[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32ml[39m[32ml[39m[90ml[39m[32ml[32ml[39m[?1l>[?2004l
+kll\total 104
+drwxr-xr-x   9 benedek  staff   288B Mar 23 11:40 [1m[36m.[39;49m[0m
+drwxr-xr-x   9 benedek  staff   288B Mar 22 09:48 [1m[36m..[39;49m[0m
+drwxr-xr-x  15 benedek  staff   480B Mar 28 16:41 [1m[36m.git[39;49m[0m
+-rw-r--r--   1 benedek  staff   170B Mar 22 23:19 .tmux.conf
+-rw-r--r--   1 benedek  staff   5.9K Mar 22 23:10 .zshrc
+-rw-r--r--@  1 benedek  staff   1.3K Mar 22 14:17 .zshrc.pre-oh-my-zsh
+-rw-r--r--   1 benedek  staff   215B Mar 22 23:20 README.md
+drwxr-xr-x   5 benedek  staff   160B Mar 22 23:19 [1m[36mmacos[39;49m[0m
+-rw-r--r--   1 benedek  staff    29K Mar 28 16:40 typescript
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32md[39m[1m[31md[1m[31mi[0m[39m[1m[31md[1m[31mi[1m[31mf[0m[39m[0m[32md[0m[32mi[0m[32mf[32mf[39m [36m-[39m[36m-[36m-[39m[36m-[36mg[39m[36mg[36mi[39m[36mi[36mt[39m[?1l>[?2004l
+kdiff\diff: unrecognized option `--git'
+usage: diff [-aBbdilpTtw] [-c | -e | -f | -n | -q | -u] [--ignore-case]
+            [--no-ignore-case] [--normal] [--strip-trailing-cr] [--tabsize]
+            [-I pattern] [-F pattern] [-L label] file1 file2
+       diff [-aBbdilpTtw] [-I pattern] [-L label] [--ignore-case]
+            [--no-ignore-case] [--normal] [--strip-trailing-cr] [--tabsize]
+            [-F pattern] -C number file1 file2
+       diff [-aBbdiltw] [-I pattern] [--ignore-case] [--no-ignore-case]
+            [--normal] [--strip-trailing-cr] [--tabsize] -D string file1 file2
+       diff [-aBbdilpTtw] [-I pattern] [-L label] [--ignore-case]
+            [--no-ignore-case] [--normal] [--tabsize] [--strip-trailing-cr]
+            [-F pattern] -U number file1 file2
+       diff [-aBbdilNPprsTtw] [-c | -e | -f | -n | -q | -u] [--ignore-case]
+            [--no-ignore-case] [--normal] [--tabsize] [-I pattern] [-L label]
+            [-F pattern] [-S name] [-X file] [-x pattern] dir1 dir2
+       diff [-aBbditwW] [--expand-tabs] [--ignore-all-blanks]
+            [--ignore-blank-lines] [--ignore-case] [--minimal]
+            [--no-ignore-file-name-case] [--strip-trailing-cr]
+            [--suppress-common-lines] [--tabsize] [--text] [--width]
+            -y | --side-by-side file1 file2
+       diff [--help] [--version]
+[1m[3m%[23m[1m[0m                                                                                                          k..ects/dotfiles\[0m[23m[24m[J[01;31m➜  [36mdotfiles[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[63C[32mDEV-smartaitrader[00m[80D[?1h=[?2004h[32mdiff[39m [36m--git[39m 
+[J[0mREADME.md   [J[1;36mmacos[0m/      [Jtypescript[JM[0m[23m[24m[25C[32mdiff[39m [36m--git[39m[K[53C[32mDEV-smartaitrader[00m[69DREADME.md
+[J[7mREADME.md [0m  [J[1;36mmacos[0m/      [Jtypescript[JM[0m[23m[24m[25C[32mdiff[39m [36m--git[39m README.md[K[43C[32mDEV-smartaitrader[00m[60D
+[7mREADME.md [0m  [7mREADME.md [0m  M[0m[23m[24m[25C[32mdiff[39m [36m--git[39m README.md[K[43C[32mDEV-smartaitrader[00m[60D
+[JM[45C[1m [0m[10D[35mR[35mE[35mA[35mD[35mM[35mE[35m.[35mm[35md[39m[1C[0m [9D[39mR[39mE[39mA[39mD[39mM[39mE[39m.[39mm[39m         [36m-[39m[39m [39m [39m [90mgit[39m[39m [39m [39m [39m  [39m [39m [39m [39m [39m [10D[32mg[39m[32mg[39m[90mit diff[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[39m[0m[39m [39m [39m [39m [39m [39m [39m [32mg[39m[90mit diff[39m[39m [39m [39m [39m [39m [39m [39m [39m [8D[1m[31ms[0m[39m[1m[31ms[0m[39m[90msh benedek@master.smartaitrader.com -i forex-benedek[39m[52D[1m[31ms[1m[31mt[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [51D[1m[31ms[0m[39m[0m[39m [1m[31ms[0m[39m[90msh benedek@master.smartaitrader.com -i forex-benedek[39m[52D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [53D[32mg[39m[32mg[39m[90mit diff[39m[1m[31mg[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [90mt[39m[0m[32mg[0m[32ms[32mt[39m[?1l>[?2004l
+[Jkgst\On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked fil
