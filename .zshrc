@@ -139,6 +139,7 @@ complete -o default -F __start_kubectl k
 
 # aliases
 
+alias glc="git-lazy-commit --api-key-path ~/.openai-apikey"
 alias ll="ls -lha"
 alias k="kubectl"
 
@@ -166,3 +167,4 @@ alias ks=ks; ks() {
   fi
 }
 
+alias deploy='f() { gh workflow run .github/workflows/manual-deploy.yaml --ref $(git branch --show-current) -f branch_name=$(git branch --show-current) -f workers=$1; unset -f f; }; f'
