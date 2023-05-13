@@ -9,3 +9,7 @@ This repo is a backup/source of truth for my own customized environment
 - [x] .zsh files
 - [x] Brewfile
 - [x] rectangle
+
+
+## Used instructions
+https://medium.com/airfrance-klm/beautify-your-iterm2-and-prompt-40f148761a49
